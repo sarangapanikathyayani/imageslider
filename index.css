@@ -1,0 +1,71 @@
+*
+{
+    margin:0;
+    padding:0;
+}
+.container
+{
+    width:100%;
+    height: 100vh;
+    /*we have to remove the property scrolling by overflow property*/
+    overflow: hidden;
+}
+.image-container {
+
+    width:500%;
+    height:100vh;
+    display:flex;
+    animation:slider 20s infinite;
+    /*u have to give the seconds definetly*/
+    /*animation:slider 20s infinite linear;*/
+
+}
+
+.image-container img{
+    width:100%;
+    height:100vh;
+   
+    
+}
+/*to give animation u have to give key frames*/
+@keyframes slider
+{
+0%
+{
+margin-left:0;
+}
+20%
+{
+    margin-left:-100%;
+}
+35%
+{
+    margin-left: -100%;
+}
+40%
+{
+    margin-left:-200%;
+}
+50%{
+    margin-left:-200%;
+
+}
+60%
+{
+    margin-left:-300%;
+}
+70%{
+    margin-left:-300%;
+}
+80%
+{
+    margin-left:-400%;
+}
+90%
+{
+    margin-left:-400%
+}
+100%
+{
+    margin-left:0;
+}
